@@ -4,7 +4,7 @@ import Province from '../dbs/models/province'
 
 let router = new Router({prefix: '/geo'})
 
-const sign = 'abcd';
+const sign = 'f8b0fe68e09ebe1122aec09daa014023';
 
 router.get('/getPosition', async (ctx) => {
   let {

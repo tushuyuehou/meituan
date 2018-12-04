@@ -32,14 +32,14 @@
     "node-sass": "4.9.3",
     "nodemailer": "4.6.8",
     "nuxt": "2.0.0",
-    "passport-local": "1.0.0",
-    "sass-loader": "7.1.0"
+    "passport-local": "1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "8.2.1",
     "eslint": "3.19.0",
     "eslint-loader": "2.0.0",
     "eslint-plugin-vue": "4.0.0",
-    "nodemon": "1.11.0"
+    "nodemon": "1.11.0",
+    "sass-loader": "^7.1.0"
   }
 }

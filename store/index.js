@@ -11,6 +11,7 @@ const store = () => new Vuex.Store({
     home
   },
   actions: {
+    //重点 这个时候还没有dom对象，没有vue实例  但是可以获取当前app的实例
     async nuxtServerInit({
       commit
     }, {req, app}) {
@@ -21,6 +22,7 @@ const store = () => new Vuex.Store({
           city
         }
       } = await app.$axios.get('/geo/getPosition')
+      //客户端的检查接口是否成功
       commit('geo/setPosition',status===200?{city,province}:{city:'',province:''})
       const {status:status2,data:{menu}}=await app.$axios.get('geo/menu')
       commit('home/setMenu',status2===200?menu:[])

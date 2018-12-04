@@ -1,7 +1,8 @@
 import Router from 'koa-router';
 import axios from './utils/axios'
 import Poi from '../dbs/models/poi'
-import sign from './utils/sign'
+// import sign from './utils/sign'
+const sign = 'f8b0fe68e09ebe1122aec09daa014023';
 
 let router = new Router({prefix: '/search'})
 
