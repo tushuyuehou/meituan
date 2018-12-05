@@ -105,6 +105,7 @@ export default {
         self.isFocus=false
       },200)
     },
+    //为了防止每一个keyup动作调用一次函数，这里使用延时函数，npm i lodash,它有个api(debounce)
     input:_.debounce(async function(){
       let self=this;
       let city=self.$store.state.geo.position.city.replace('市','')
